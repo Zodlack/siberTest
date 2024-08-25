@@ -1,0 +1,329 @@
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+
+    .promo{
+        .right{
+            position: absolute;
+            z-index: -1;
+            left: 1107px;
+            top: -100px;
+            width: 300px;
+            height: 300px;
+        }
+        .left{
+            z-index: -1;
+            position: absolute;
+            top: -153px;
+            width: 400px;
+            height: 400px;
+            left: -44px;
+        }
+       
+    }
+
+    .education{
+        &__promotion{
+            padding-top: 40px;
+            display: flex;
+            align-items: center;
+            gap: 22px;
+            .button{
+                margin-top: 0;
+                width: 251px;
+            }
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .container {
+        max-width: 300px;
+    }
+
+    .header {
+        border-bottom-right-radius: 18px;
+        &__logo {
+            gap: 14px;
+        }
+        &__link{
+            color:$white;
+        }
+        &__img {
+            width: 57px;
+            height: 47px;
+            img {
+                width: 57px;
+            }
+        }
+
+        &__descrp {
+            font-size: 9px;
+            line-height: 11px;
+
+            span {
+                font-size: 5px;
+                line-height: 6px;
+            }
+        }
+
+        &__number {
+            display: none;
+        }
+
+
+        &__rigth {
+            display: none;
+        }
+
+        .gamburger {
+            display: flex;
+        }
+    }
+
+    .promo{
+        margin:66px 0 0 0;
+        &__img{
+            display: none;
+        }
+        .right, .left{
+            display: none;
+        }
+        &__title{
+            font-size: 30px;
+            line-height: 43px;
+            display: flex;
+            flex-direction: column;
+        }
+        &__info{
+            max-width: 300px;
+        }
+        &__descrp{
+            margin-top: 38px;
+            max-width: 294px;
+            p{
+                font-size: 13px;   
+            }
+        }
+        .button{
+            width: 217px;
+            height: 46px;
+            &__link{
+                font-size: 14px;
+                line-height: 17px;
+            }
+        }
+        &__bonus{
+            margin-top: 31px;
+        }
+        &__surprise{
+            width: 85px;
+            height: 64px;
+            
+            img{
+                width: 66px;
+                height: 66px;
+            }
+            &_free{
+                width: 186px;
+                span{
+                    font-size: 13px;
+                    line-height: 15px;
+                    padding-left: 24px;
+                }
+            }
+        }
+        &__plus{
+            width: 35px;
+            height: 25px;
+            margin-top: 39px;
+            svg {
+                width: 12px;
+                height: 12px;
+            }
+        }
+    }
+
+    .greeting{
+        margin-bottom: 59px;
+        &__wrap{
+            flex-direction: column;
+        }
+        &__label{
+            margin-bottom: 25px;
+        }
+        &__title{
+            font-size: 16px;
+            line-height: 20px;
+        }
+        &__info{
+            max-width: 100%;
+        }
+        &__descrp{
+            gap: 15px;
+            p{
+               font-size: 13px;
+            }
+            ul{
+                padding-left: 19px;
+                li{
+                    span{
+                        font-size: 11px;
+                        line-height: 13px;
+                    }
+                }
+            }
+        }
+        &__participation{
+            flex-direction: column;
+            margin-top: 59px;
+        }
+        &__text{
+            font-size: 12px;
+            margin-left: 0;
+            padding-top: 100px;
+        }
+        &__button{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: flex-start;
+            margin-top: 29px;
+        }
+        .button{
+            &--first{
+                width: 208px;
+            }
+        }
+    }
+
+    .lesson{
+        &__wrap {
+            align-items: center;
+            padding: 19px 0 55px 0;
+            flex-direction: column;
+            gap: 27px;
+        }
+        &__text{
+            order: 1;
+            padding-bottom: 0;
+        }
+        &__video{
+            order: 2;
+            
+            width: 100%;
+            height: 209px;
+            
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+    
+        }
+        &__play{
+            position: absolute;
+            top: 75px;
+            left: 129px;
+            width: 47px;
+            height: 47px;
+            svg {
+                width: 22px;
+                height: 24px;
+            }
+        }
+        &__title{
+            font-size: 20px;
+            line-height: 24px;
+        }
+        &__label {
+            margin-bottom: 16px;
+        }
+        &__descrp {
+            max-width: 100%;
+    
+            p {
+               font-size: 12px;
+               line-height: 15px;
+            }
+        }
+        
+    }
+
+    .education{
+        &__wrap{
+            display: flex;
+            gap: 54px;
+            align-items: center;
+            flex-direction: column;
+            padding: 54px 0 67px 0;
+        }
+        &__label{
+            max-width: 100%;
+            gap: 7px;
+        }
+        &__title{
+            font-size: 24px;
+            line-height: 29px;
+        }
+        &__subtitle{
+            font-size: 14px;
+            line-height: 17px;
+        }
+        &__descrp{
+            margin-bottom: 15px;
+        }
+        &__instruction{
+            // padding-left: 40px;
+            gap: 25px;
+            li{
+                &:nth-child(1){
+                    &:before{
+                        top: 78px;
+                    }
+                    &:after{
+                        width: 3px;
+                        height: 51px;
+                        top: 100px;
+                    }
+                }
+                &:nth-child(2){
+                    &:before{
+                        top: 162px;
+                    }
+                    &:after{
+                        width: 3px;
+                        height: 30px;
+                        top: 184px;
+                    }
+                }
+                &:nth-child(3){
+                    &:before{
+                        top: 226px;
+                    }
+                }
+            }
+        }
+        &__promotion{
+            padding-top: 25px;
+            flex-direction: column;
+            gap: 25px;
+            align-items: flex-start;
+            .button{
+                width: 252px;
+                height: 51px;
+            }
+        }
+        &__condition{
+            max-width: 100%;
+            p{
+                font-size: 13px;
+            }
+        }
+        .figure{
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,183 @@
+.promo{
+    min-height: 648px;
+    margin: 74px 0 144px 0;
+    position: relative;
+    &__wrap{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    &__info{
+        display: flex;
+        flex-direction: column;
+        max-width: 597px;
+    }
+    &__title{
+        font-weight: 600;
+        font-size: 60px;
+        line-height: 71px;
+        color: $black;
+        span{
+            font-size: 20px;
+            line-height: 24px;
+            color: $green;
+        }
+    }
+    &__descrp{
+        margin-top: 41px;
+        max-width: 497px;
+        p{
+            @include textDescrp;   
+        }
+    }
+    .button{
+        transition: .3s all;
+        &:hover{
+            background-color:$white;
+            border:1px solid $green;
+            transition: .3s all;
+        }
+        &__link{
+            transition: .3s all;
+            &:hover{
+                color: $green;
+                transition: .3s all;
+            }
+        }
+    }
+    &__bonus{
+        display: flex;
+        flex-direction: row;
+        gap: 6px;
+        margin-top: 56px;
+    }
+    &__surprise{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 177px;
+        height: 133px;
+        border-radius: 18px;
+        border: 1px solid #FFFFFFB2;
+        background-color: $white;
+        opacity: .7;
+        box-shadow: 4px 5px 20px 0px #0000001A;
+        
+        img{
+            width: 137px;
+            height: 137px;
+        }
+        &_free{
+            width: 350px;
+            span{
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 28px;
+                color: $green;
+                padding-left: 37px;
+            }
+        }
+    }
+    &__plus{
+        width: 65px;
+        height: 61px;
+        background-color:#439F2C;        ;
+        border-radius: 28px 30px 18px 30px; // Скругления углов, как на изображении
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 72px;
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+        }
+        svg {
+            width: 19px;
+            height: 19px;
+            object-fit: contain;
+            fill: $white;
+        }
+    }
+    &__img{             
+        width: 580px;
+        height: 648px;
+        border-radius:30px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    &__social{
+        position: absolute;
+        width: 46px;
+        height: 259px;
+        border-radius:30px;
+        background-color:$white;
+        opacity: .7;
+        z-index: 2;
+        top: 21px;
+        right: 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    &__network{
+        width: 30px;
+        height: 30px;
+        border-radius:50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: .3s all;
+        &:hover{
+            transition: .3s all;
+            width: 32px;
+        }
+        &:nth-child(1){
+            background-color: #2AA81A;
+            svg{
+                fill: $white;
+            }
+        }
+        &:nth-child(2){
+            svg{
+                width: 30px;
+                height: 30px;
+                fill: #039BE5;
+            }
+        }
+        &:nth-child(3){
+            background-color: #4065D6;
+            svg{
+               fill: $white;
+            }
+        }
+        &:nth-child(4){
+            background-color: #FF9800;
+            svg{
+                fill: $white;
+            }
+        }
+        &:nth-child(5){
+            background-color: #F20000;
+            svg{
+                fill: $white;
+            }
+        }
+        a{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            svg{
+                width: 16px;
+                height: 16px;
+            }
+        }
+    }
+}   

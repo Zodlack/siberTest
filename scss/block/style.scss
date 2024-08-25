@@ -1,0 +1,34 @@
+@import '../base/mixin.scss';
+@import '../base/variables.scss';
+
+*{
+    font-family: 'Rubik' , sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1492px;
+    margin: 0 auto;
+}
+
+main{
+    overflow: hidden;
+}
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: $white;
+}
+h1,h2,h3,p{
+    margin: 0;
+    padding: 0;
+}
+@import '../block/header.scss';
+@import '../block/promo.scss';
+@import '../block/button.scss';
+@import '../block/greeting.scss';
+@import '../block/lesson.scss';
+@import '../block/education.scss';
+@import '../base/media.scss';

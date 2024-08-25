@@ -1,0 +1,95 @@
+.lesson {
+    background-color: #F4F4F4;
+    box-shadow: 0px 0px 37.4px 0px #0000001A inset;
+
+    &__wrap {
+        display: flex;
+        align-items: end;
+        padding: 84px 0;
+        gap: 50px;
+    }
+
+    // video component
+    &__video {
+        width: 581px;
+        height: 329px;
+        border-radius: 30px;
+        overflow: hidden;
+        background: #32323280;
+        position: relative;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        &-content {
+            width: 100%;
+            height: 100%;
+            display: none; // Скрываем видео по умолчанию
+            border-radius: 30px;
+        }
+    }
+
+    
+    &__overlay {
+        width: 100%;
+        height: 100%;
+        background: #32323280;
+        position: absolute;
+        opacity: 0.5;
+        transition: opacity 0.3s ease;
+    }
+
+    &__play{
+        position: absolute;
+        top: 117px;
+        left: 237px;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        background-color:$white;
+        width: 107px;
+        height: 107px;
+        border-radius:50%;
+        svg {
+            cursor: pointer;
+            fill: $green;
+            transition: transform 0.3s ease;
+            width: 31px;
+            height: 35px;
+        }
+        &:hover svg {
+            transform: scale(1.1);
+        }
+    }
+
+    /* */ 
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 27px;
+
+    }
+
+    &__label {
+        margin-bottom: 48px;
+    }
+
+    &__title {
+        @include titleH2;
+    }
+
+    &__descrp {
+        max-width: 553px;
+
+        p {
+            font-family: Inter;
+            @include textDescrp;
+        }
+    }
+
+}

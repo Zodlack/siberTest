@@ -1,0 +1,103 @@
+.greeting{
+    margin-bottom: 79px;
+    min-height: 597px;
+    &__wrap{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    &__title{
+        @include titleH2;
+    }
+    &__info{
+        display: flex;
+        flex-direction: column;
+        // align-items: center;
+        max-width: 780px;
+    }
+    &__descrp{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        p{
+            font-family: Inter;
+            @include textDescrp;
+        }
+        ul{
+            margin: 0;
+            padding: 0;
+            padding-left: 17px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            li{
+                color: $green;
+                span{
+                    @include textDescrp;
+                }
+            }
+        }
+    }
+    &__participation{
+        display: flex;
+        flex-direction: row;
+        margin-top: 50px;
+    }
+    &__photo{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+    }
+    &__img{
+        width: 75px;
+        height: 75px;
+        border-radius:50%;
+        position: absolute;
+        &_2{
+            left: 45px;
+        }
+        &_3{
+            background-color:$green;
+            left: 110px;
+            display: flex;
+            align-items:center;
+            justify-content: center;
+            svg{
+                fill: $white;
+                width: 25px;
+                height: 47px;
+            }
+        }
+    }
+
+    &__text{
+        max-width: 270px;
+        @include  textDescrp;
+        color:#B7B7B7;
+        margin-left: 201px;
+        padding-top: 10px;
+    }
+
+    &__button{
+        display: flex;
+        flex-direction: row;
+        gap: 18px;
+        align-items: center;
+        margin-top: 55px;
+        .button{
+            transition: .3s all;
+            &:hover{
+                background-color:$green;
+                transition: .3s all;
+            }
+            &__link{
+                transition: .3s all;
+                &:hover{
+                    color: $white;
+                    transition: .3s all;
+                }
+            }
+        }
+    }
+
+}

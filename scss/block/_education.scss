@@ -1,0 +1,143 @@
+.education{
+    overflow: hidden;
+    position: relative;
+    &__wrap{
+        display: flex;
+        gap: 74px;
+        align-items: flex-start;
+        padding: 105px 0 89px 0;
+    }
+    &__label{
+        max-width: 425px;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+    }
+    &__title{
+        @include titleH2;
+        span{
+            color: $green;
+        }
+    }
+    &__subtitle{
+        font-family: Inter;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24px;
+        color:$black;
+    }
+    &__info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+    &__descrp{
+        @include textDescrp;
+        font-family: Inter;
+        font-weight: 700;
+        margin-bottom: 53px;
+    }
+    &__instruction{
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        padding-left: 40px;
+        gap: 35px;
+        li{
+            &:before{
+                position:absolute;
+                left: 11px;
+                content: '';
+                display: block;
+                background-color: $green;
+                width: 13px;
+                height: 13px;
+                border-radius: 50%;
+            }
+            &:nth-child(1){
+                &:before{
+                    top: 76px;
+                }
+                &:after{
+                    position: absolute;
+                    content: '';
+                    display: block;
+                    width: 3px;
+                    height: 26px;
+                    background-color: $green;
+                    left: 16px;
+                    top: 97px;
+                }
+            }
+            &:nth-child(2){
+                &:before{
+                    top: 131px;
+                }
+                &:after{
+                    position: absolute;
+                    content: '';
+                    display: block;
+                    width: 3px;
+                    height: 26px;
+                    background-color: $green;
+                    left: 16px;
+                    top: 152px;
+                }
+            }
+            &:nth-child(3){
+                &:before{
+                    top: 189px;
+                }
+            }
+        }
+        span{
+            @include textDescrp;
+        }
+    }
+    &__promotion{
+        padding-top: 40px;
+        display: flex;
+        align-items: center;
+        gap: 22px;
+        .button{
+            margin-top: 0;
+            transition: .3s all;
+            &:hover{
+                background-color:$white;
+                border:1px solid $green;
+                transition: .3s all;
+            }
+            &__link{
+                transition: .3s all;
+                &:hover{
+                    color: $green;
+                    transition: .3s all;
+                }
+            }
+        }
+    }
+    &__condition{
+        p{
+            @include textDescrp;
+            font-weight: 300;
+            font-family: Inter;
+            font-style: italic;
+            opacity: .5;
+        }
+    }
+    .figure{
+        width: 600px;
+        height: 600px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

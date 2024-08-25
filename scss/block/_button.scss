@@ -1,0 +1,35 @@
+.button{
+    margin-top: 54px;
+    width: 314px;
+    height: 66px;
+    border-radius: 35px;
+    background-color: $green;
+    
+
+    &__link{
+        @include button;
+        &_first{
+            @include textLink;
+        }
+        &_second{
+            @include textLink;
+        }
+        &_third{
+            @include textLink;
+        }
+    }
+
+    &--first{
+        width: 200px;
+        @include interButton;
+        
+    }
+    &--second{
+        width: 273px;
+        @include interButton;
+    }
+    &--third{
+        width: 259px;
+        @include interButton;
+    }
+}
